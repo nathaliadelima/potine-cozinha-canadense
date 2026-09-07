@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     POTINE — COZINHA CANADENSE
+     Site institucional — página única (one-page)
+
+     Desenvolvido por Na Lima (nathdelima)
+
+     Estrutura do projeto:
+       index.html        <- este arquivo (conteúdo e estrutura)
+       css/styles.css     <- todo o visual (cores, fontes, layout)
+       js/script.js       <- rolagem suave do menu
+       images/            <- logo, ilustração e prints de avaliação
+
+     ============================================================ -->
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Potine — Cozinha Canadense</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+
+<!-- ============ MENU FIXO DO TOPO ============ -->
+<!-- Links de navegação por âncora (#sabores, #avaliacoes, etc.) + botão "Pedir agora" -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <nav>
+      <a href="#poutine-e">O que é</a>
+      <a href="#sabores">Sabores</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#historia">História</a>
+      <a href="#local">Local</a>
+    </nav>
+    <a class="btn-order-sm" href="https://www.ifood.com.br/delivery/florianopolis-sc/poutin---cozinha-canadense-ingleses-do-rio-vermelho/36a58100-0817-4cf9-9416-e8059dd0c1a3" target="_blank" rel="noopener">Pedir agora →</a>
+  </div>
+</div>
+
+<!-- HERO -->
+
+<!-- ============ HERO (ABERTURA) ============ -->
+<!-- Logo em selo giratório (CSS), headline principal, botões de pedido e estatísticas -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-seal-wrap">
+      <svg class="hero-seal-ring" viewBox="0 0 300 300" width="180" height="180">
+        <defs>
+          <path id="circleTop" d="M 34,150 A 116,116 0 1,1 266,150" fill="none"/>
+          <path id="circleBottom" d="M 266,150 A 116,116 0 1,1 34,150" fill="none"/>
+        </defs>
+        <circle cx="150" cy="150" r="128" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-dasharray="5 7"/>
+        <circle cx="150" cy="150" r="108" fill="none" stroke="var(--red)" stroke-width="1"/>
+        <text font-family="Space Mono, monospace" font-size="11" letter-spacing="3" fill="var(--red-deep)">
+          <textPath href="#circleTop" startOffset="50%" text-anchor="middle">QUEBEC → FLORIANÓPOLIS</textPath>
+        </text>
+        <text font-family="Space Mono, monospace" font-size="11" letter-spacing="3" fill="var(--red-deep)">
+          <textPath href="#circleBottom" startOffset="50%" text-anchor="middle">COZINHA CANADENSE</textPath>
+        </text>
+      </svg>
+      <img class="hero-seal-logo" src="images/logo-potine.jpg" alt="Potine">
+    </div>
+    <div class="eyebrow" style="justify-content:center;">Ingleses do Rio Vermelho · Todos os dias, a partir das 12h</div>
+    <h1>O prato mais amado<br>do Canadá chegou<br>em Floripa</h1>
+    <p class="hero-sub">Pra saber por que ele ganhou tantos fãs lá fora, é só pegar o seu.</p>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="https://www.ifood.com.br/delivery/florianopolis-sc/poutin---cozinha-canadense-ingleses-do-rio-vermelho/36a58100-0817-4cf9-9416-e8059dd0c1a3" target="_blank" rel="noopener">Pedir no iFood →</a>
+      <a class="btn-secondary" href="https://wa.me/5548992213630?text=Oi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido%20%F0%9F%98%8A" target="_blank" rel="noopener">Falar no WhatsApp →</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>6 mil+</b><span>Seguidores nas redes sociais</span></div>
+      <div><b>3 mil+</b><span>Potines servidas por mês</span></div>
+      <div><b>4.9★</b><span>Avaliação média</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE É -->
+
+<!-- ============ ANATOMIA DA POTINE ============ -->
+<!-- Explica o prato camada por camada + ilustração + nota de origem (Quebec -> Florianópolis) -->
+<section id="poutine-e">
+  <div class="wrap">
+    <div class="anatomy">
+      <div class="section-head">
+        <div class="eyebrow" style="color:var(--gravy)">A anatomia da Potine</div>
+        <h2>3 camadas, <br>1 mordida perfeita</h2>
+        <p>Se você nunca provou, relaxa — é mais simples (e mais viciante) do que parece.</p>
+      </div>
+      <div class="anatomy-grid">
+        <div class="layer-diagram">
+          <div class="layer">
+            <div class="layer-swatch" style="background:#F2B23C; color:#5B3A0E;">01</div>
+            <div class="layer-copy"><b>Batata frita generosa</b><span>Frita na hora, no ponto certo pra segurar o molho quente sem desmanchar.</span></div>
+          </div>
+          <div class="layer">
+            <div class="layer-swatch" style="background:#FFF8EA; color:var(--ink);">02</div>
+            <div class="layer-copy"><b>Queijo coalho fresco</b><span>Aquele que "range" no dente e ainda derrete puxando fio.</span></div>
+          </div>
+          <div class="layer">
+            <div class="layer-swatch" style="background:var(--gravy); color:#3A230A;">03</div>
+            <div class="layer-copy"><b>Molho quente na hora</b><span>Encorpado, temperado, despejado só depois de pronto pra chegar quentinho.</span></div>
+          </div>
+        </div>
+        <div class="anatomy-right">
+          <img class="anatomy-illustration-big" src="images/ilustracao-potine.png" alt="Ilustração de uma Potine">
+          <div class="origin-note">
+            <div class="route">QUEBEC <span class="dots"></span> FLORIANÓPOLIS</div>
+            <p>A Potine nasceu da vontade de trazer a culinária canadense pro Brasil. Depois de meses testando receitas numa cozinha piloto, ganhou casa aqui em Florianópolis, com sabores que só existem aqui. <a href="#historia" style="color:inherit; text-decoration:underline;">Conheça a história completa</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ CARDÁPIO DE SABORES ============ -->
+<!-- 3 grupos: Potines / Mac & Cheese / Nick Tails. Cada card tem foto-placeholder + preço -->
+<section id="sabores">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Cardápio de sabores</div>
+      <h2 style="color:var(--red);">Escolha seu <br>ponto de partida</h2>
+      <p>Conheça nossos carros-chefe — os mais pedidos, os mais queridos.</p>
+    </div>
+
+    <div class="flavor-group">
+      <div class="flavor-group-head">
+        <div class="cat-name">Potines</div>
+        <p>A nossa versão do clássico canadense: batata frita generosa, queijo coalho e o molho quente que dá nome ao prato.</p>
+      </div>
+      <div class="flavor-scroller">
+        <div class="flavor-card">
+          <div class="flavor-photo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5.5-5-4 4-2-2L3 17"/></svg>
+            <span>Foto em breve</span>
+          </div>
+          <h3>Double Pork</h3>
+          <p>Batatas cobertas com o autêntico molho canadense, bacon, pernil acebolado, queijo coalho, finalizadas com maple syrup e cebolinha.</p>
+          <span class="flavor-price">R$ 64,90</span>
+        </div>
+        <div class="flavor-card">
+          <div class="flavor-photo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5.5-5-4 4-2-2L3 17"/></svg>
+            <span>Foto em breve</span>
+          </div>
+          <h3>Quebec Pleasure</h3>
+          <p>Batatas com costela bovina extremamente suculenta, cebola, queijo coalho grelhado e nosso molho canadense encorpado e marcante, finalizadas com cebolinha fresca.</p>
+          <span class="flavor-price">R$ 59,90</span>
+        </div>
+        <div class="flavor-card">
+          <div class="flavor-photo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5.5-5-4 4-2-2L3 17"/></svg>
+            <span>Foto em breve</span>
+          </div>
+          <h3>Vancouver Vibes</h3>
+          <p>Batatas com frango desfiado extremamente suculento, milho verde e Catupiry Original, envolvidas por nosso molho canadense encorpado e marcante, finalizadas com cebolinha fresca.</p>
+          <span class="flavor-price">R$ 44,90</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flavor-group">
+      <div class="flavor-group-head">
+        <div class="cat-name">Mac & Cheese</div>
+        <p>Massa mergulhada num creme de queijos derretidos, servida quentinha — o prato definitivo pra quem busca conforto de garfada em garfada.</p>
+      </div>
+      <div class="flavor-scroller">
+        <div class="flavor-card">
+          <div class="flavor-photo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5.5-5-4 4-2-2L3 17"/></svg>
+            <span>Foto em breve</span>
+          </div>
+          <h3>Mac and Cheese Bacon</h3>
+          <p>Macarrão envolvido em um creme de queijos super cremoso (cheddar, colby e monterey jack) e bacon em cubos.</p>
+          <span class="flavor-price">R$ 48,90</span>
+        </div>
+        <div class="flavor-card">
+          <div class="flavor-photo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5.5-5-4 4-2-2L3 17"/></svg>
+            <span>Foto em breve</span>
+          </div>
+          <h3>[Sabor fictício 1]</h3>
+          <p>Espaço reservado — aguardando confirmação do 2º sabor dessa linha.</p>
+          <span class="flavor-price">R$ 00,00</span>
+        </div>
+        <div class="flavor-card">
+          <div class="flavor-photo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5.5-5-4 4-2-2L3 17"/></svg>
+            <span>Foto em breve</span>
+          </div>
+          <h3>[Sabor fictício 2]</h3>
+          <p>Espaço reservado — aguardando confirmação do 3º sabor dessa linha.</p>
+          <span class="flavor-price">R$ 00,00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flavor-group">
+      <div class="flavor-group-head">
+        <div class="cat-name">Nick Tails</div>
+        <p>Massa artesanal canadense recheada na hora — a sobremesa que fecha a experiência com chave de ouro.</p>
+      </div>
+      <div class="flavor-scroller">
+        <div class="flavor-card">
+          <div class="flavor-photo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5.5-5-4 4-2-2L3 17"/></svg>
+            <span>Foto em breve</span>
+          </div>
+          <h3>Kinder Bueno</h3>
+          <p>Massa artesanal canadense, feita na hora, recheada com creme Bueno e Nutella, finalizada com pedaços de Kinder Bueno.</p>
+          <span class="flavor-price">R$ 44,95</span>
+        </div>
+        <div class="flavor-card">
+          <div class="flavor-photo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5.5-5-4 4-2-2L3 17"/></svg>
+            <span>Foto em breve</span>
+          </div>
+          <h3>Ninho com Nutella</h3>
+          <p>Massa artesanal canadense, feita na hora, recheada com creme de leite Ninho e Nutella.</p>
+          <span class="flavor-price">R$ 29,95</span>
+        </div>
+        <div class="flavor-card">
+          <div class="flavor-photo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5.5-5-4 4-2-2L3 17"/></svg>
+            <span>Foto em breve</span>
+          </div>
+          <h3>Ganache & Castanhas</h3>
+          <p>Massa artesanal canadense, feita na hora, recheada com ganache 50% cacau e mix de castanhas.</p>
+          <span class="flavor-price">R$ 29,95</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flavor-cta">
+      <a class="btn-primary" href="https://www.ifood.com.br/delivery/florianopolis-sc/poutin---cozinha-canadense-ingleses-do-rio-vermelho/36a58100-0817-4cf9-9416-e8059dd0c1a3" target="_blank" rel="noopener">Ver sabores completos e pedir</a>
+    </div>
+  </div>
+</section>
+
+<!-- CUPOM -->
+
+<!-- ============ CUPOM DE DESCONTO ============ -->
+<!-- Cupom real: AMOPOTINE (10% no 1º pedido), resgatado via cardapio.link -->
+<section id="pedir">
+  <div class="wrap">
+    <div class="coupon-wrap">
+      <div class="coupon-main">
+        <div class="eyebrow">Primeira vez aqui?</div>
+        <h2>10% OFF no<br>seu 1º pedido</h2>
+        <p>Resgate direto no nosso cardápio online — sem enrolação, sem pegadinha. É nosso jeito de dizer bem-vindo à família Potine.</p>
+        <a class="btn-secondary" style="border-color:var(--cheese); color:var(--cheese);" href="https://cardapio.link/potine" target="_blank" rel="noopener">Resgatar no cardápio →</a>
+      </div>
+      <div class="coupon-stub">
+        <div class="coupon-big">10<span>% off</span></div>
+        <div class="coupon-code" style="margin-top:18px;">AMOPOTINE</div>
+        <div style="font-size:13px; opacity:0.7;">válido no 1º pedido</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVALIAÇÕES -->
+
+<!-- ============ AVALIAÇÕES ============ -->
+<!-- Prints reais de avaliações do iFood (não são texto, são imagens em images/avaliacao-*.png) -->
+<section id="avaliacoes">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Quem já pediu, volta</div>
+      <h2 style="color:var(--red);">O que dizem <br>os Potilovers</h2>
+      <p style="margin-top:8px;">4.9★ de média em avaliações no iFood.</p>
+    </div>
+    <div class="review-grid">
+      <div class="review-shot"><img src="images/avaliacao-shaiala.png" alt="Avaliação de Shaiala"></div>
+      <div class="review-shot"><img src="images/avaliacao-ycaro.png" alt="Avaliação de Ycaro"></div>
+      <div class="review-shot"><img src="images/avaliacao-bruno.png" alt="Avaliação de Bruno"></div>
+      <div class="review-shot"><img src="images/avaliacao-pedro.png" alt="Avaliação de Pedro"></div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+
+<!-- ============ NOSSA HISTÓRIA ============ -->
+<!-- 3 colunas: O sonho / A abertura / Hoje -->
+<section id="historia" style="background:var(--ink);">
+  <div class="wrap">
+    <div class="section-head" style="max-width:640px;">
+      <div class="eyebrow" style="color:var(--gravy)">Nossa história</div>
+      <h2 style="color:var(--red-bright);">Um sonho canadense<br>com endereço em Floripa</h2>
+    </div>
+    <div class="historia-grid">
+      <div class="historia-col">
+        <div class="historia-label">O sonho</div>
+        <p>A Potine nasceu de um sonho que, no começo, parecia um pouco louco: apresentar ao Brasil o sabor e o aconchego da culinária canadense por meio de um prato que quase ninguém conhecia por aqui. Durante cerca de seis meses, testamos receitas, combinamos ingredientes e buscamos o equilíbrio perfeito entre tradição e criatividade em uma pequena cozinha piloto.</p>
+      </div>
+      <div class="historia-col">
+        <div class="historia-label">A abertura</div>
+        <p>Foi assim que a poutine deixou de ser apenas uma lembrança distante do Canadá e ganhou uma nova casa em Florianópolis. Desde a abertura das portas, a Potine transforma batatas, queijo, autêntico molho canadense e outros ingredientes em experiências capazes de aquecer o coração e despertar a vontade de voltar.</p>
+      </div>
+      <div class="historia-col">
+        <div class="historia-label">Hoje</div>
+        <p>Nossa cozinha canadense mistura referências do Canadá com receitas próprias, criando uma experiência completa para quem quer descobrir novos sabores, compartilhar bons momentos e se permitir viajar sem sair da mesa. Da primeira mordida de uma poutine ao último pedaço de um Nick Tail preparado na hora, queremos vender mais do que comida: queremos entregar um pedacinho desse sonho canadense em cada pedido.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+
+<!-- ============ LOCALIZAÇÃO ============ -->
+<!-- Endereço, horário, links de delivery (iFood/WhatsApp) e mapa incorporado do Google Maps -->
+<section id="local">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Onde a gente tá</div>
+      <h2 style="color:var(--red);">Ingleses do<br>Rio Vermelho</h2>
+    </div>
+    <div class="location-grid">
+      <div class="location-info">
+        <h3 style="color:var(--red);">Horário & contato</h3>
+        <div class="info-row">
+          <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--cheese)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <div><b>Funcionamento</b><span>Todos os dias, a partir das 12h</span></div>
+        </div>
+        <div class="info-row">
+          <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--cheese)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg></div>
+          <div><b>Endereço</b><span>Rua Intendente João Nunes Vieira, 909 — Ingleses do Rio Vermelho, Florianópolis — SC</span></div>
+        </div>
+        <div class="info-row">
+          <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--cheese)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h11l4 4v5h-3"/><path d="M4 8v9h3"/><circle cx="8.5" cy="17.5" r="1.6"/><circle cx="16.5" cy="17.5" r="1.6"/></svg></div>
+          <div><b>Delivery</b><span><a href="https://www.ifood.com.br/delivery/florianopolis-sc/poutin---cozinha-canadense-ingleses-do-rio-vermelho/36a58100-0817-4cf9-9416-e8059dd0c1a3" target="_blank" rel="noopener" style="text-decoration:underline;">iFood</a> e <a href="https://wa.me/5548992213630?text=Oi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido%20%F0%9F%98%8A" target="_blank" rel="noopener" style="text-decoration:underline;">WhatsApp</a></span></div>
+        </div>
+        <div class="info-row">
+          <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--cheese)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M8 6l1.6-2.5h4.8L16 6"/><circle cx="12" cy="12.5" r="3.4"/></svg></div>
+          <div><b>Instagram</b><span><a href="https://instagram.com/potinebrasil" target="_blank" rel="noopener" style="text-decoration:underline;">@potinebrasil</a></span></div>
+        </div>
+      </div>
+      <div class="map-stage">
+        <iframe class="map-frame" src="https://www.google.com/maps?q=Rua+Intendente+João+Nunes+Vieira,+909,+Ingleses+do+Rio+Vermelho,+Florianópolis&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização da Potine"></iframe>
+        <div class="pin"></div>
+        <a class="map-label" href="https://www.google.com/maps?q=Rua+Intendente+João+Nunes+Vieira,+909,+Ingleses+do+Rio+Vermelho,+Florianópolis" target="_blank" rel="noopener">Ver no mapa →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+
+<!-- ============ CHAMADA FINAL ============ -->
+<section class="final-cta">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Tá com fome?</div>
+    <h2>Pede a sua<br>Potine agora</h2>
+    <div class="final-cta-actions">
+      <a class="btn-primary" href="https://www.ifood.com.br/delivery/florianopolis-sc/poutin---cozinha-canadense-ingleses-do-rio-vermelho/36a58100-0817-4cf9-9416-e8059dd0c1a3" target="_blank" rel="noopener">Pedir no iFood →</a>
+      <a class="btn-secondary" href="https://wa.me/5548992213630?text=Oi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido%20%F0%9F%98%8A" target="_blank" rel="noopener">Falar no WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ RODAPÉ ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-potine.jpg" alt="Potine" class="footer-logo-img">
+      </div>
+      <div class="footer-links">
+        <div>
+          <b>Pedir</b>
+          <a href="https://www.ifood.com.br/delivery/florianopolis-sc/poutin---cozinha-canadense-ingleses-do-rio-vermelho/36a58100-0817-4cf9-9416-e8059dd0c1a3" target="_blank" rel="noopener">iFood</a>
+          <a href="https://wa.me/5548992213630?text=Oi!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido%20%F0%9F%98%8A" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div>
+          <b>Site</b>
+          <a href="#poutine-e">O que é Potine</a>
+          <a href="#sabores">Sabores</a>
+          <a href="#avaliacoes">Avaliações</a>
+          <a href="#historia">Nossa história</a>
+          <a href="#local">Localização</a>
+        </div>
+        <div>
+          <b>Social</b>
+          <a href="https://instagram.com/potinebrasil" target="_blank" rel="noopener">Instagram @potinebrasil</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Potine — Cozinha Canadense · 1ª rede de Potine do Brasil</span>
+      <span>© 2026 Potine Cozinha Canadense. Todos os direitos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
