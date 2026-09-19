@@ -524,3 +524,45 @@
   .footer-bottom{
     display:flex; justify-content:space-between; padding-top:24px; font-size:12px; opacity:0.55; flex-wrap:wrap; gap:10px;
   }
+
+  /* =====================================================
+   FOTOS DOS POUTINES E MAC & CHEESE
+   Mantém todas as fotos no mesmo tamanho
+   ===================================================== */
+
+#sabores > .wrap > .flavor-group:nth-child(2) .flavor-photo,
+#sabores > .wrap > .flavor-group:nth-child(3) .flavor-photo {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+#sabores > .wrap > .flavor-group:nth-child(2) .flavor-photo img,
+#sabores > .wrap > .flavor-group:nth-child(3) .flavor-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Quebec Pleasure - mostra mais da foto */
+#sabores > .wrap > .flavor-group:nth-child(2) .flavor-card:nth-child(2) .flavor-photo img {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* ============================================================
+   NICKTAILS
+   ============================================================ */
+
+.nicktails-intro {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto !important;
+  text-align: center !important;
+  display: block;
+  white-space: normal !important;
+}
+
