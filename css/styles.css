@@ -32,7 +32,6 @@
   *{box-sizing:border-box;}
  html{
   scroll-behavior:smooth;
-  scroll-padding-top:80px;
 }
   body{
     margin:0;
@@ -70,6 +69,9 @@
   backdrop-filter:blur(6px);
   border-bottom:1px solid var(--line);
   transition:transform .25s ease;
+}
+.topbar.hide{
+  transform:translateY(-100%);
 }
 .topbar.hide{
   transform:translateY(-100%);
