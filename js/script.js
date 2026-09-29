@@ -57,5 +57,36 @@ document.addEventListener("DOMContentLoaded", function () {
       closeMobileMenu();
     });
   });
+    // ============================================================
+  // ESCONDE O MENU AO DESCER E MOSTRA AO SUBIR
+  // ============================================================
+
+  const topbar = document.querySelector(".topbar");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", function () {
+    const currentScrollY = window.scrollY;
+
+    if (!topbar) return;
+
+    // Mantém o menu visível quando está no topo
+    if (currentScrollY <= 20) {
+      topbar.classList.remove("hide");
+      lastScrollY = currentScrollY;
+      return;
+    }
+
+    // Descendo → esconde
+    if (currentScrollY > lastScrollY) {
+      topbar.classList.add("hide");
+    }
+
+    // Subindo → mostra
+    else if (currentScrollY < lastScrollY) {
+      topbar.classList.remove("hide");
+    }
+
+    lastScrollY = currentScrollY;
+  });
 });
 
