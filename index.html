@@ -14,22 +14,123 @@
      ============================================================ -->
 
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Potine — Cozinha Canadense</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>POTINE — Cozinha Canadense</title>
+
+
+  <!-- ============================================================
+       SEO
+       ============================================================ -->
+
+  <meta name="description" content="Potine Cozinha Canadense em Florianópolis - poutines, Mac & Cheese, sobremesas canadenses e muito mais. Peça pelo delivery ou visite nossa unidade nos Ingleses.">
+
+  <link rel="canonical" href="https://www.potine.com.br/">
+
+
+  <!-- ============================================================
+       OPEN GRAPH — compartilhamento
+       ============================================================ -->
+
+  <meta property="og:title" content="POTINE — Cozinha Canadense">
+
+  <meta property="og:description" content="Potine Cozinha Canadense em Florianópolis - poutines, Mac & Cheese, sobremesas canadenses e muito mais. Peça pelo delivery ou visite nossa unidade nos Ingleses.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="https://www.potine.com.br/">
+
+  <meta property="og:image" content="https://www.potine.com.br/images/logo-potine.jpg">
+
+  <meta property="og:image:alt" content="POTINE — Cozinha Canadense">
+
+  <meta property="og:locale" content="pt_BR">
+
+
+  <!-- ============================================================
+       DADOS ESTRUTURADOS — RESTAURANTE
+       ============================================================ -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "POTINE — Cozinha Canadense",
+    "description": "1ª rede brasileira especializada em poutine",
+    "url": "https://www.potine.com.br/",
+    "telephone": "+55 48 99221-3630",
+    "image": "https://www.potine.com.br/images/logo-potine.jpg",
+    "servesCuisine": "Canadian",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Intendente João Nunes Vieira, 909 — Loja 4",
+      "addressLocality": "Florianópolis",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://instagram.com/potinebrasil"
+    ],
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Rua+Intendente+João+Nunes+Vieira+909+Florianópolis+SC",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "opens": "12:00",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "12:00",
+        "closes": "23:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "12:00",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
+
+
+  <!-- ============================================================
+       FONTES E CSS
+       ============================================================ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
+
 <body>
 
 
 <!-- ============ MENU FIXO DO TOPO ============ -->
 <!-- Links de navegação por âncora (#sabores, #avaliacoes, etc.) + botão "Pedir agora" -->
 <div class="topbar">
+
   <div class="topbar-inner">
+
     <nav>
       <a href="#poutine-e">O que é</a>
       <a href="#sabores">Sabores</a>
@@ -37,8 +138,25 @@
       <a href="#historia">História</a>
       <a href="#local">Local</a>
     </nav>
+
     <a class="btn-order-sm" href="https://www.ifood.com.br/delivery/florianopolis-sc/poutin---cozinha-canadense-ingleses-do-rio-vermelho/36a58100-0817-4cf9-9416-e8059dd0c1a3" target="_blank" rel="noopener">Pedir agora →</a>
+
+    <!-- Botão do menu mobile -->
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      ☰
+    </button>
+
   </div>
+
+  <!-- Menu que aparece no celular -->
+  <div class="mobile-menu">
+    <a href="#poutine-e">O que é</a>
+    <a href="#sabores">Sabores</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#historia">História</a>
+    <a href="#local">Local</a>
+  </div>
+
 </div>
 
 <!-- HERO -->
@@ -65,7 +183,7 @@
       <img class="hero-seal-logo" src="images/logo-potine.jpg" alt="Potine">
     </div>
     <div class="eyebrow" style="justify-content:center;">Ingleses do Rio Vermelho · Todos os dias, a partir das 12h</div>
-    <h1>O prato mais amado<br>do Canadá chegou<br>em Floripa</h1>
+    <h1>Um dos pratos mais amados<br>do Canadá chegou<br>em Floripa</h1>
     <p class="hero-sub">Pra saber por que ele ganhou tantos fãs lá fora, é só pegar o seu.</p>
     <div class="hero-ctas">
       <a class="btn-primary" href="https://www.ifood.com.br/delivery/florianopolis-sc/poutin---cozinha-canadense-ingleses-do-rio-vermelho/36a58100-0817-4cf9-9416-e8059dd0c1a3" target="_blank" rel="noopener">Pedir no iFood →</a>
@@ -74,7 +192,7 @@
     <div class="hero-stats">
       <div><b>6 mil+</b><span>Seguidores nas redes sociais</span></div>
       <div><b>3 mil+</b><span>Potines servidas por mês</span></div>
-      <div><b>5.0★</b><span>Avaliação média</span></div>
+      <div><b>5,0★</b><span>Avaliação média</span></div>
     </div>
   </div>
 </section>
@@ -118,14 +236,14 @@
   </div>
 </section>
 
-<!-- ============ CARDÁPIO DE SABORES ============ -->
+<!-- ============ DESTAQUES CARDÁPIO ============ -->
 
 <section id="sabores">
 
   <div class="wrap">
 
     <div class="section-head">
-      <div class="eyebrow">Cardápio de sabores</div>
+      <div class="eyebrow">Destaques do cardápio</div>
 
       <h2 style="color:var(--red);">
         Escolha seu <br>favorito
@@ -239,7 +357,7 @@
 
         <p>
           Massa envolvida em um creme de queijos derretidos, servida quentinha. <br>
-          O prato definitivo para quem busca uma confort food.
+          O prato definitivo para quem busca uma comfort food.
         </p>
 
       </div>
@@ -255,7 +373,7 @@
           <div class="flavor-photo">
 
             <img
-              src="images/MC Carne.jpeg"
+              src="images/MC Porco.jpeg" 
               alt="Mac & Cheese Bacon"
             >
 
@@ -265,7 +383,7 @@
 
           <p>
             Macarrão envolvido em um creme de cheddar, Colby
-            e Monterey Jack e bacon em cubos.
+            e Monterey Jack, com bacon em cubos.
           </p>
 
         </div>
@@ -278,7 +396,7 @@
           <div class="flavor-photo">
 
             <img
-              src="images/MC Porco.jpeg"
+              src="images/MC Carne.jpeg"
               alt="Mac & Cheese Costela"
             >
 
@@ -288,7 +406,7 @@
 
           <p>
             Macarrão envolvido em um creme de cheddar, Colby
-            e Monterey Jack e costela desfiada.
+            e Monterey Jack, com costela desfiada.
           </p>
 
         </div>
@@ -443,9 +561,9 @@
 <section id="avaliacoes">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Quem já pediu, sempre volta</div>
+      <div class="eyebrow">Quem já pediu sempre volta</div>
       <h2 style="color:var(--red);">O que dizem <br>os Potilovers</h2>
-      <p style="margin-top:8px;">5.0★ de média em avaliações no iFood.</p>
+      <p style="margin-top:8px;">5,0★ de média em avaliações no iFood.</p>
     </div>
     <div class="review-grid">
       <div class="review-shot"><img src="images/avaliacao-shaiala.png" alt="Avaliação de Shaiala"></div>
@@ -477,7 +595,7 @@
       </div>
       <div class="historia-col">
         <div class="historia-label">Hoje</div>
-        <p>Nossa cozinha canadense mistura referências do Canadá com receitas próprias, criando uma experiência completa para quem quer descobrir novos sabores, compartilhar bons momentos e se permitir viajar sem sair da mesa. Da primeira mordida de uma poutine ao último pedaço de um Nick Tail preparado na hora, queremos vender mais do que comida: queremos entregar um pedacinho desse sonho canadense em cada pedido.</p>
+        <p>Nossa cozinha canadense mistura referências do Canadá com receitas próprias, criando uma experiência completa para quem quer descobrir novos sabores, compartilhar bons momentos e se permitir viajar sem sair da mesa. Da primeira mordida de uma poutine ao último pedaço de um Nick Tail preparado na hora, queremos servir mais do que comida: queremos entregar um pedacinho desse sonho canadense em cada pedido.</p>
       </div>
     </div>
   </div>
@@ -497,12 +615,25 @@
       <div class="location-info">
         <h3 style="color:var(--red);">Horário & contato</h3>
         <div class="info-row">
-          <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--cheese)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-          <div><b>Funcionamento</b><span>Todos os dias, a partir das 12h</span></div>
+          <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--cheese)" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3.5 2" />
+            </svg></div>
+          <div><b>Funcionamento</b><span>Todos os dias, a partir das 12h</span>
+            <span>• Segunda a Quinta: até às 23h
+              • Sexta e Sábado: até às 23h30
+              • Domingo: até às 22h </span>
+          </div>
         </div>
         <div class="info-row">
-          <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--cheese)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg></div>
-          <div><b>Endereço</b><span>Rua Intendente João Nunes Vieira, 909 — Ingleses do Rio Vermelho, Florianópolis — SC</span></div>
+          <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--cheese)" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" />
+              <circle cx="12" cy="9.5" r="2.3" />
+            </svg></div>
+          <div><b>Endereço</b><span>Rua Intendente João Nunes Vieira, 909 — Loja 4 — Ingleses do Rio Vermelho, Florianópolis —
+              SC</span></div>
         </div>
         <div class="info-row">
           <div class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--cheese)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h11l4 4v5h-3"/><path d="M4 8v9h3"/><circle cx="8.5" cy="17.5" r="1.6"/><circle cx="16.5" cy="17.5" r="1.6"/></svg></div>
@@ -552,7 +683,7 @@
         </div>
         <div>
           <b>Site</b>
-          <a href="#poutine-e">O que é Potine</a>
+          <a href="#poutine-e">O que é poutine</a>
           <a href="#sabores">Sabores</a>
           <a href="#avaliacoes">Avaliações</a>
           <a href="#historia">Nossa história</a>
@@ -565,7 +696,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>Potine — Cozinha Canadense · 1ª rede de Potine do Brasil</span>
+      <span>Potine — Cozinha Canadense · 1ª rede brasileira especializada em poutine</span>
       <span>© 2026 Potine Cozinha Canadense. Todos os direitos reservados.</span>
     </div>
   </div>

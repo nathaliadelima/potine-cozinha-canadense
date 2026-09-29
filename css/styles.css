@@ -85,7 +85,70 @@
   .topbar nav{ display:flex; gap:28px; font-size:13px; letter-spacing:0.04em; text-transform:uppercase; font-weight:600;}
   .topbar nav a{ text-decoration:none; opacity:0.85; transition:opacity .2s; color:var(--red);}
   .topbar nav a:hover{ opacity:1; }
-  @media(max-width:780px){ .topbar nav{display:none;} }
+
+/* Menu mobile */
+.menu-toggle{
+  display:none;
+  background:none;
+  border:none;
+  color:var(--red);
+  font-size:28px;
+  cursor:pointer;
+  padding:4px 8px;
+  line-height:1;
+}
+
+.mobile-menu{
+  display:none;
+}
+
+/* Apenas no celular */
+@media(max-width:780px){
+
+  .topbar nav{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .mobile-menu{
+    display:none;
+    flex-direction:column;
+    gap:0;
+    padding:10px 20px 18px;
+    background:var(--cheese);
+    border-top:1px solid rgba(0,0,0,0.08);
+  }
+
+  .mobile-menu.open{
+    display:flex;
+  }
+
+  .mobile-menu a{
+    text-decoration:none;
+    color:var(--red);
+    font-size:13px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    padding:13px 0;
+    border-bottom:1px solid rgba(0,0,0,0.08);
+  }
+
+  .mobile-menu a:last-child{
+    border-bottom:none;
+  }
+
+  .topbar-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+}
+
   .btn-order-sm{
     background:var(--red); color:var(--cheese); border:none;
     padding:10px 18px; border-radius:999px; font-weight:700; font-size:13px;
